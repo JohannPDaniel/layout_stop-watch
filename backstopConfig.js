@@ -8,7 +8,7 @@ const basic = {
   url: 'https://johannpdaniel.github.io/layout_stop-watch/',
   referenceurl: 'https://johannpdaniel.github.io/layout_stop-watch/',
   testurl: 'https://johannpdaniel.github.io/layout_stop-watch/',
-  selector: ['body'],
+  selector: ['.stopwatch'],
   misMatchThreshold: 0.4,
 };
 
