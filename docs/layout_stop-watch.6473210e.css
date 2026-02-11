@@ -14,10 +14,11 @@ body {
   border-radius: 50%;
   width: 80vmin;
   height: 80vmin;
+  position: relative;
 }
 
 .stopwatch:after {
-  content: '';
+  content: "";
   background-color: #f6a603;
   border-radius: 50%;
   width: 5vmin;
@@ -37,7 +38,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%)rotate(-90deg);
 }
 
 .stopwatch__minutes {
@@ -49,7 +50,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%)rotate(-90deg);
 }
 
 .stopwatch--speed-up .stopwatch__seconds {
@@ -62,21 +63,21 @@ body {
 
 @keyframes rotate-seconds {
   from {
-    transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-50%)rotate(-90deg);
   }
 
   to {
-    transform: translateY(-50%) rotate(270deg);
+    transform: translateY(-50%)rotate(270deg);
   }
 }
 
 @keyframes rotate-minutes {
   from {
-    transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-50%)rotate(-90deg);
   }
 
   to {
-    transform: translateY(-50%) rotate(270deg);
+    transform: translateY(-50%)rotate(270deg);
   }
 }
-/*# sourceMappingURL=layout_stop-watch.0961e806.css.map */
+/*# sourceMappingURL=layout_stop-watch.6473210e.css.map */

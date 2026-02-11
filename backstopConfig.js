@@ -1,23 +1,21 @@
 'use strict';
-// https://github.com/garris/BackstopJS#advanced-scenarios
 
 const backstop = require('@mate-academy/backstop-config');
 const { basicScenario } = backstop;
 
 const basic = {
   ...basicScenario,
-  label: 'Elementary test',
-  selectors: ['body'],
-  removeSelectors: ['h1'],
+  url: 'https://johannpdaniel.github.io/layout_stop-watch/',
+  referenceurl: 'https://johannpdaniel.github.io/layout_stop-watch/',
+  testurl: 'https://johannpdaniel.github.io/layout_stop-watch/',
+  selector: ['body'],
   misMatchThreshold: 0.4,
-  referenceUrl: basicScenario.referenceUrl + '/stopwatch/',
 };
 
 const config = {
   ...backstop,
   fileNameTemplate: '{scenarioLabel}',
   onBeforeScript: 'puppet/onBefore.js',
-  onReadyScript: 'puppet/onReady.js',
   viewports: [
     {
       name: 'tablet_h',
@@ -29,6 +27,7 @@ const config = {
     {
       ...basic,
       label: 'Stopwatch started',
+      onReadyScript: 'puppet/stopAnimation.js',
     },
     {
       ...basic,
@@ -38,7 +37,7 @@ const config = {
     {
       ...basic,
       label: 'Stopwatch after one circle',
-      postDOMChangeWait: 12000,
+      postDOMChangeWait: 10000,
     },
   ],
 };
