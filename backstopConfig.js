@@ -8,9 +8,7 @@ const basic = {
   ...basicScenario,
   label: 'Elementary test',
   selectors: ['body'],
-  removeSelectors: [
-    'h1',
-  ],
+  removeSelectors: ['h1'],
   misMatchThreshold: 0.4,
   referenceUrl: basicScenario.referenceUrl + '/stopwatch/',
 };
@@ -41,7 +39,7 @@ const config = {
       ...basic,
       label: 'Stopwatch after one circle',
       postDOMChangeWait: 12000,
-    }
+    },
   ],
 };
 
