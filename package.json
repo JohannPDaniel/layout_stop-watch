@@ -13,7 +13,7 @@
     "postinstall": "npm run update",
     "watch": "parcel src/index.html --open",
     "build": "parcel build src/index.html --dist-dir dist",
-    "build:docs": "parcel build src/index.html --dist-dir docs --no-optimize",
+    "build:docs": "parcel build src/index.html --dist-dir docs --no-optimize --public-url ./",
     "test": "npm run lint && npm run test:only"
   },
   "keywords": [],
