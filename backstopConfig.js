@@ -16,7 +16,6 @@ const basic = {
 const config = {
   ...backstop,
   fileNameTemplate: '{scenarioLabel}',
-  onBeforeScript: 'puppet/onBefore.js',
   viewports: [
     {
       name: 'tablet_h',
@@ -28,7 +27,6 @@ const config = {
     {
       ...basic,
       label: 'Stopwatch started',
-      onReadyScript: 'puppet/stopAnimation.js',
     },
     {
       ...basic,
