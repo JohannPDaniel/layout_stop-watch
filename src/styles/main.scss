@@ -27,7 +27,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform-origin: 0% 50%;
+    transform-origin: left center;
     transform: translateY(-50%) rotate(-90deg);
 
     width: $seconds-length;
